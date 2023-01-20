@@ -1,0 +1,11 @@
+[
+    {
+        "id": 1,
+        "priority": 1,
+        "action": { "type": "redirect", "redirect": { "transform": { "queryTransform": { "addOrReplaceParams": [{ "key": "useskin", "value": "vector"}] } } } },
+        "condition": { 
+            "regexFilter": "^https?:\/\/.*.?wikipedia.org\/..*", 
+            "resourceTypes": ["main_frame"] 
+        }
+    }
+]

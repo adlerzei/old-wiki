@@ -1,0 +1,22 @@
+{
+  "name": "old-wiki",
+  "version": "1.0.0",
+  "description": "This extension simply changes Wikipedia interface to the old beautiful vector layout.",
+  "dependencies": {
+    "@types/chrome": "0.0.127",
+    "npm": "^8.18.0"
+  },
+  "scripts": {
+    "build": "./tools/build.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adlerzei/old-wiki"
+  },
+  "author": "Christian Zei",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/adlerzei/old-wiki/issues"
+  },
+  "homepage": "https://github.com/adlerzei/old-wiki#readme"
+}

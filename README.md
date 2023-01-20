@@ -1,5 +1,4 @@
-# Old Wiki ![Logo](./extension/icons/logo_final_48.png) 
-<!-- TODO add new logo --> 
+# Old Wiki ![Logo](./extension/icons/logo_48.png) 
 
 ## What?
 This is a extension for common web browsers coded using the WebExtensions API.

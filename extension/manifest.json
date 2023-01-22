@@ -1,5 +1,5 @@
 {
-  "description": "This extension simply changes the Wikipedia user interface to the beautiful old vector layout. It is also applied to the other international Wikimedia pages.",
+  "description": "Changes the Wikipedia user interface to the beautiful old vector layout. Is also applied to the other international Wikimedia pages.",
   "author": "Christian Zei",
   "manifest_version": 3,
   "name": "Old Wiki",

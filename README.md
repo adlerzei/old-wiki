@@ -10,13 +10,13 @@ This extension simply changes Wikipedia interface to the old beautiful vector la
 The extension simply adds "?useskin=vector" to the end of each HTTP request to use the old vector skin.
 
 ### Which browser to use?
-The extension can be added into Chrome, Firefox and Opera.
+The extension can be added into Chrome, Edge, Brave and Opera. Unfortunately, Firefox is not supported because the delarativeNetRequest API is not currently supported.
 
 #### Chrome Web Store
-[Old Wiki at the Chrome Web Store]()
+[Old Wiki at the Chrome Web Store](https://chrome.google.com/webstore/detail/old-wiki/cphagceemhgokfclmbnkpfkmchbfnclb)
 
-#### Firefox Add-ons (AMO)
-[Old Wiki at AMO]()
+<!-- #### Firefox Add-ons (AMO)
+[Old Wiki at AMO]() -->
 
 ### Important Notice
 This is a third party extension and is not related to the Wikipedia developer team in any way.
@@ -39,14 +39,15 @@ In Chrome:
     - load the `/extension` folder 
 - or
     - drag & drop the Chrome build file from `/builds` into the tab.
-    
+
+<!--
 In Firefox:
 - go to `about:debugging`
 - then
     - load `extension/manifest.json`
 - or
     - load the Firefox build file from `/builds`.
-
+-->
 
 ### Donations
 If you like my work, you can support me via [PayPal](https://www.paypal.me/ChristianZei/5). Thank you!

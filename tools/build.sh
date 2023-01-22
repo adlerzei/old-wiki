@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 echo "Building Extension"
-EXTENSIONNAME="Old Wiki"
+EXTENSIONNAME="Old-Wiki"
 DES=builds
 
 TAG=$(date +"%y%m%d"_%H%M)

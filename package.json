@@ -1,7 +1,7 @@
 {
   "name": "old-wiki",
-  "version": "1.0.0",
-  "description": "This extension simply changes Wikipedia interface to the old beautiful vector layout.",
+  "version": "1.1.0",
+  "description": "This extension simply changes the Wikipedia user interface to the beautiful old vector layout. It is also applied to the other international Wikimedia pages.",
   "dependencies": {
     "@types/chrome": "0.0.127",
     "npm": "^8.18.0"

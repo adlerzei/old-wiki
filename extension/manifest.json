@@ -1,11 +1,11 @@
 {
-  "description": "Changes the Wikipedia layout back to the good old vector skin.",
+  "description": "This extension simply changes the Wikipedia user interface to the beautiful old vector layout. It is also applied to the other international Wikimedia pages.",
   "author": "Christian Zei",
   "manifest_version": 3,
   "name": "Old Wiki",
   "short_name": "OldWiki",
   "homepage_url": "https://github.com/adlerzei/old-wiki#readme",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "icons": {
     "48": "icons/logo_48.png",
     "128": "icons/logo_128.png"
@@ -21,7 +21,21 @@
     "declarativeNetRequest"
   ],
   "host_permissions": [
-    "*://*.wikipedia.org/*"
+    "*://*.wikipedia.org/*",
+    "*://*.wiktionary.org/*",
+    "*://*.wikiquote.org/*",
+    "*://*.wikibooks.org/*",
+    "*://*.wikisource.org/*",
+    "*://species.wikimedia.org/*",
+    "*://*.wikinews.org/*",
+    "*://*.wikiversity.org/*",
+    "*://*.wikivoyage.org/*",
+    "*://commons.wikimedia.org/*",
+    "*://*.wikidata.org/*",
+    "*://*.mediawiki.org/*",
+    "*://meta.wikimedia.org/*",
+    "*://incubator.wikimedia.org/*",
+    "*://wikitech.wikimedia.org/*"
   ],
   "action": {
     "default_icon": "icons/logo_32.png",

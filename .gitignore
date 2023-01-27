@@ -1,0 +1,9 @@
+/builds/*
+*.zip
+/.idea/
+/.idea/*
+/node_modules/
+/node_modules/*
+package-lock.json
+/extension/_metadata/
+/extension/_metadata/*

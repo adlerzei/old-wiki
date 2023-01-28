@@ -5,7 +5,7 @@
   "name": "Old Wiki",
   "short_name": "OldWiki",
   "homepage_url": "https://github.com/adlerzei/old-wiki#readme",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "icons": {
     "48": "icons/logo_48.png",
     "128": "icons/logo_128.png"

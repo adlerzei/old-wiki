@@ -91,3 +91,6 @@ Thanks to everyone using, supporting and contributing to the extension.
     - Meta-Wiki
     - Wikimedia Incubator
     - Wikimedia Cloud Services
+
+##### v1.2
+- A popup was added to activate or deactivate the vector skin.

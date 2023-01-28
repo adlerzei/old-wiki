@@ -12,13 +12,19 @@
   },
   "declarative_net_request" : {
     "rule_resources" : [{
-      "id": "ruleset_1",
+      "id": "apply_vector_skin",
       "enabled": true,
-      "path": "rules/rules.json"
+      "path": "rules/apply.json"
+    },
+    {
+      "id": "remove_vector_skin",
+      "enabled": false,
+      "path": "rules/remove.json"
     }]
   },
   "permissions": [
-    "declarativeNetRequest"
+    "storage",
+    "declarativeNetRequest"    
   ],
   "host_permissions": [
     "*://*.wikipedia.org/*",
@@ -37,8 +43,12 @@
     "*://incubator.wikimedia.org/*",
     "*://wikitech.wikimedia.org/*"
   ],
+  "background": {
+    "service_worker": "worker.js"
+  },
   "action": {
     "default_icon": "icons/logo_32.png",
-    "default_title": "Old Wiki"
+    "default_title": "Old Wiki",
+    "default_popup": "popup/popup.html"
   }
 }

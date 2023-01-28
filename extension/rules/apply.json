@@ -4,7 +4,7 @@
         "priority": 1,
         "action": { "type": "redirect", "redirect": { "transform": { "queryTransform": { "addOrReplaceParams": [{ "key": "useskin", "value": "vector"}] } } } },
         "condition": { 
-            "regexFilter": "^https?:\/\/.*.?wikipedia.org\/..*", 
+            "regexFilter": "^https?:\/\/.*[.]?wikipedia[.]org\/..*", 
             "resourceTypes": ["main_frame"] 
         }
     },
@@ -13,7 +13,7 @@
         "priority": 1,
         "action": { "type": "redirect", "redirect": { "transform": { "queryTransform": { "addOrReplaceParams": [{ "key": "useskin", "value": "vector"}] } } } },
         "condition": { 
-            "regexFilter": "^https?:\/\/.*.?wiktionary.org\/..*", 
+            "regexFilter": "^https?:\/\/.*[.]?wiktionary[.]org\/..*", 
             "resourceTypes": ["main_frame"] 
         }
     },
@@ -22,7 +22,7 @@
         "priority": 1,
         "action": { "type": "redirect", "redirect": { "transform": { "queryTransform": { "addOrReplaceParams": [{ "key": "useskin", "value": "vector"}] } } } },
         "condition": { 
-            "regexFilter": "^https?:\/\/.*.?wikiquote.org\/..*", 
+            "regexFilter": "^https?:\/\/.*[.]?wikiquote[.]org\/..*", 
             "resourceTypes": ["main_frame"] 
         }
     },
@@ -31,7 +31,7 @@
         "priority": 1,
         "action": { "type": "redirect", "redirect": { "transform": { "queryTransform": { "addOrReplaceParams": [{ "key": "useskin", "value": "vector"}] } } } },
         "condition": { 
-            "regexFilter": "^https?:\/\/.*.?wikibooks.org\/..*", 
+            "regexFilter": "^https?:\/\/.*[.]?wikibooks[.]org\/..*", 
             "resourceTypes": ["main_frame"] 
         }
     },
@@ -40,7 +40,7 @@
         "priority": 1,
         "action": { "type": "redirect", "redirect": { "transform": { "queryTransform": { "addOrReplaceParams": [{ "key": "useskin", "value": "vector"}] } } } },
         "condition": { 
-            "regexFilter": "^https?:\/\/.*.?wikisource.org\/..*", 
+            "regexFilter": "^https?:\/\/.*[.]?wikisource[.]org\/..*", 
             "resourceTypes": ["main_frame"] 
         }
     },
@@ -49,7 +49,7 @@
         "priority": 1,
         "action": { "type": "redirect", "redirect": { "transform": { "queryTransform": { "addOrReplaceParams": [{ "key": "useskin", "value": "vector"}] } } } },
         "condition": { 
-            "regexFilter": "^https?:\/\/species.wikimedia.org\/..*", 
+            "regexFilter": "^https?:\/\/species[.]wikimedia[.]org\/..*", 
             "resourceTypes": ["main_frame"] 
         }
     },
@@ -58,7 +58,7 @@
         "priority": 1,
         "action": { "type": "redirect", "redirect": { "transform": { "queryTransform": { "addOrReplaceParams": [{ "key": "useskin", "value": "vector"}] } } } },
         "condition": { 
-            "regexFilter": "^https?:\/\/.*.?wikinews.org\/..*", 
+            "regexFilter": "^https?:\/\/.*[.]?wikinews[.]org\/..*", 
             "resourceTypes": ["main_frame"] 
         }
     },
@@ -67,7 +67,7 @@
         "priority": 1,
         "action": { "type": "redirect", "redirect": { "transform": { "queryTransform": { "addOrReplaceParams": [{ "key": "useskin", "value": "vector"}] } } } },
         "condition": { 
-            "regexFilter": "^https?:\/\/.*.?wikiversity.org\/..*", 
+            "regexFilter": "^https?:\/\/.*[.]?wikiversity[.]org\/..*", 
             "resourceTypes": ["main_frame"] 
         }
     },
@@ -76,7 +76,7 @@
         "priority": 1,
         "action": { "type": "redirect", "redirect": { "transform": { "queryTransform": { "addOrReplaceParams": [{ "key": "useskin", "value": "vector"}] } } } },
         "condition": { 
-            "regexFilter": "^https?:\/\/.*.?wikivoyage.org\/..*", 
+            "regexFilter": "^https?:\/\/.*[.]?wikivoyage[.]org\/..*", 
             "resourceTypes": ["main_frame"] 
         }
     },
@@ -85,7 +85,7 @@
         "priority": 1,
         "action": { "type": "redirect", "redirect": { "transform": { "queryTransform": { "addOrReplaceParams": [{ "key": "useskin", "value": "vector"}] } } } },
         "condition": { 
-            "regexFilter": "^https?:\/\/commons.wikimedia.org\/..*", 
+            "regexFilter": "^https?:\/\/commons[.]wikimedia[.]org\/..*", 
             "resourceTypes": ["main_frame"] 
         }
     },
@@ -94,7 +94,7 @@
         "priority": 1,
         "action": { "type": "redirect", "redirect": { "transform": { "queryTransform": { "addOrReplaceParams": [{ "key": "useskin", "value": "vector"}] } } } },
         "condition": { 
-            "regexFilter": "^https?:\/\/.*.wikidata.org\/..*", 
+            "regexFilter": "^https?:\/\/.*[.]wikidata[.]org\/..*", 
             "resourceTypes": ["main_frame"] 
         }
     },
@@ -103,7 +103,7 @@
         "priority": 1,
         "action": { "type": "redirect", "redirect": { "transform": { "queryTransform": { "addOrReplaceParams": [{ "key": "useskin", "value": "vector"}] } } } },
         "condition": { 
-            "regexFilter": "^https?:\/\/.*.mediawiki.org\/..*", 
+            "regexFilter": "^https?:\/\/.*[.]mediawiki[.]org\/..*", 
             "resourceTypes": ["main_frame"] 
         }
     },
@@ -112,7 +112,7 @@
         "priority": 1,
         "action": { "type": "redirect", "redirect": { "transform": { "queryTransform": { "addOrReplaceParams": [{ "key": "useskin", "value": "vector"}] } } } },
         "condition": { 
-            "regexFilter": "^https?:\/\/meta.wikimedia.org\/..*", 
+            "regexFilter": "^https?:\/\/meta[.]wikimedia[.]org\/..*", 
             "resourceTypes": ["main_frame"] 
         }
     },
@@ -121,7 +121,7 @@
         "priority": 1,
         "action": { "type": "redirect", "redirect": { "transform": { "queryTransform": { "addOrReplaceParams": [{ "key": "useskin", "value": "vector"}] } } } },
         "condition": { 
-            "regexFilter": "^https?:\/\/incubator.wikimedia.org\/..*", 
+            "regexFilter": "^https?:\/\/incubator[.]wikimedia[.]org\/..*", 
             "resourceTypes": ["main_frame"] 
         }
     },
@@ -130,7 +130,7 @@
         "priority": 1,
         "action": { "type": "redirect", "redirect": { "transform": { "queryTransform": { "addOrReplaceParams": [{ "key": "useskin", "value": "vector"}] } } } },
         "condition": { 
-            "regexFilter": "^https?:\/\/wikitech.wikimedia.org\/..*", 
+            "regexFilter": "^https?:\/\/wikitech[.]wikimedia[.]org\/..*", 
             "resourceTypes": ["main_frame"] 
         }
     }

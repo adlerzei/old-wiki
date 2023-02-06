@@ -94,3 +94,6 @@ Thanks to everyone using, supporting and contributing to the extension.
 
 ##### v1.2
 - A popup was added to activate or deactivate the vector skin.
+
+##### v1.3
+- Fix popup font size for Windows

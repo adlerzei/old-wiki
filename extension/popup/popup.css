@@ -11,7 +11,7 @@ html, body {
 .title-text{
     padding: 2% 0;
     text-align: center;
-    font-size: 24px;
+    font-size: 20px;
     color: #000;
     font-weight: bold;
     font-family: 'Linux Libertine','Georgia','Times',serif;
@@ -27,7 +27,7 @@ html, body {
     font-variant: small-caps;
     font-weight: bold;
     padding: 3px;
-    margin-left: 20px;
+    margin-left: 16px;
 }
 
 .select-box {
@@ -147,7 +147,7 @@ input:checked + .slider:before {
     font-variant: small-caps;
     padding: 3px;
     margin-left: 25px;
-    font-size: 18px;
+    font-size: 16px;
     text-align: left;
     font-weight: bold;
     margin-top: 2px;

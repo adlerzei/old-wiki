@@ -1,13 +1,12 @@
-// updateAddress.js
-// by Torma
-// https://github.com/torma616
-//
-//
-// This updates the URL on the webpage after
-// the ?useskin=vector query has been applied,
-// to bring us back to the good old days when
-// Vector was default, as it should be.
-//
+/** updateAddress.js
+ * by Torma
+ * https://github.com/torma616
+ * 
+ * 
+ * This updates the URL on the webpage after the ?useskin=vector query has been applied,
+ * to bring us back to the good old days when Vector was default, as it should be. 
+ * 
+ **/ 
 'use strict';
 
 (async () => {

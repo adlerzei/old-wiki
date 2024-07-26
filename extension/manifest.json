@@ -47,7 +47,9 @@
     "service_worker": "worker.js"
   },
   "action": {
-    "default_icon": "icons/logo_32.png",
+    "default_icon": {
+      "32": "icons/logo_32.png"
+    },
     "default_title": "Old Wiki",
     "default_popup": "popup/popup.html"
   },
@@ -73,7 +75,7 @@
       "js": [
         "updateAddress.js"
       ],
-      "run_at":"document_end"
+      "run_at":"document_start"
     }
   ]
 }

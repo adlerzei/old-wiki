@@ -9,16 +9,24 @@
 // Vector was default, as it should be.
 //
 
-let queryString = document.location.search;
+(async () => {
+  const browser = chrome;
+  const { hide_url_query: hideQuery } = await browser.storage.local.get('hide_url_query')
+  const { origin, pathname, hash } = window.location;
+  let { search } = window.location;
 
-if (queryString.includes('useskin=vector')) {
-    queryString = queryString.replace(/(|&)useskin=vector(&|)/, '');
-    if (queryString === '?') {
-        queryString = '';
+  if (hideQuery) {
+    if (search.includes('useskin=vector')) {
+      search = search
+        .replace(/(\?|&)useskin=vector(&|$)/, '$1')
+        .replace(/&$/, '');
+      if (search === '?') {
+        search = '';
+      }
+      window.history.replaceState(
+        null,
+        document.title,
+        `${origin}${pathname}${search}${hash}`);
     }
-  window.history.replaceState(
-    null, 
-    document.title, 
-    `${document.location.origin}${document.location.pathname}${queryString}${document.location.hash}`
-    )
-}
+  }
+})();

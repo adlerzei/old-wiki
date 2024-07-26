@@ -4,15 +4,21 @@
 var browser = chrome;
 
 var vectorSkinActivation = true;
+var hideURLQuery = true;
 
 var vectorSkinActivationSwitch = document.getElementById("vectorSkinActivationSwitch");
+var hideURLQuerySwitch = document.getElementById("hideURLQuerySwitch");
 
 // load stored settings from local storage
 browser.storage.local.get((items) => {
 	vectorSkinActivation = items.hasOwnProperty('vector_skin_activation') ? items.vector_skin_activation : true;
+	hideURLQuery = items.hasOwnProperty('hide_url_query') ? items.hide_url_query : true;
 
 	vectorSkinActivationSwitch.checked = vectorSkinActivation;
+	hideURLQuerySwitch.checked = hideURLQuery;
+	
 	vectorSkinActivationSwitch.addEventListener("change", activationSwitchChanged);
+	hideURLQuerySwitch.addEventListener("change", activationSwitchChanged);
 });
 
 /**
@@ -21,7 +27,11 @@ browser.storage.local.get((items) => {
 function activationSwitchChanged() {
 	// apply skin or not
 	vectorSkinActivation = vectorSkinActivationSwitch.checked;
-	browser.storage.local.set({vector_skin_activation: vectorSkinActivationSwitch.checked});
+	hideURLQuery = hideURLQuerySwitch.checked;
+	browser.storage.local.set({
+		vector_skin_activation: vectorSkinActivationSwitch.checked,
+		hide_url_query: hideURLQuerySwitch.checked
+	});
 }
 
 /**

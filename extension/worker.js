@@ -4,6 +4,7 @@
 var browser = chrome;
 
 var vectorSkinActivation = true;
+var hideURLQuery = true;
 
 /**
  * Loads the current settings.
@@ -40,6 +41,7 @@ function onSettingsLoaded(items) {
  */
 function parseSettings(items) {
     vectorSkinActivation = items.hasOwnProperty('vector_skin_activation') ? items.vector_skin_activation : true;
+    hideURLQuery = items.hasOwnProperty('hide_url_query') ? items.hide_url_query : true;
 }
 
 /**
@@ -49,6 +51,7 @@ function parseSettings(items) {
  */
  function parseChangedSettings(items) {
     vectorSkinActivation = items.hasOwnProperty('vector_skin_activation') ? items.vector_skin_activation.newValue : true;
+    hideURLQuery = items.hasOwnProperty('hide_url_query') ? items.hide_url_query.newValue : true;
 }
 
 /**

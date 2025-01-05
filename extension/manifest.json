@@ -47,8 +47,35 @@
     "service_worker": "worker.js"
   },
   "action": {
-    "default_icon": "icons/logo_32.png",
+    "default_icon": {
+      "32": "icons/logo_32.png"
+    },
     "default_title": "Old Wiki",
     "default_popup": "popup/popup.html"
-  }
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.wikipedia.org/*",
+        "*://*.wiktionary.org/*",
+        "*://*.wikiquote.org/*",
+        "*://*.wikibooks.org/*",
+        "*://*.wikisource.org/*",
+        "*://species.wikimedia.org/*",
+        "*://*.wikinews.org/*",
+        "*://*.wikiversity.org/*",
+        "*://*.wikivoyage.org/*",
+        "*://commons.wikimedia.org/*",
+        "*://*.wikidata.org/*",
+        "*://*.mediawiki.org/*",
+        "*://meta.wikimedia.org/*",
+        "*://incubator.wikimedia.org/*",
+        "*://wikitech.wikimedia.org/*"
+      ],
+      "js": [
+        "updateAddress.js"
+      ],
+      "run_at":"document_start"
+    }
+  ]
 }

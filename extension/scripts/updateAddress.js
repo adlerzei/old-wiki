@@ -11,6 +11,7 @@
 
 (async () => {
   const browser = chrome;
+  let enabled = true;
   let hideQuery = true;
 
   /**
@@ -20,7 +21,9 @@
    */
   function onSettingsLoaded(items) {
     parseSettings(items);
-    checkURL(hideQuery);
+    if (enabled) {
+      checkURL(hideQuery);
+    }
   }
 
   /**
@@ -29,6 +32,7 @@
    * @param {[key: string]: any} items The items from the local storage.
    */
   function parseSettings(items) {
+    enabled = items.hasOwnProperty('vector_skin_activation') ? items.vector_skin_activation : true;
     hideQuery = items.hasOwnProperty('hide_url_query') ? items.hide_url_query : true;
   }
 
@@ -71,5 +75,5 @@
   /**
    * Loads the current settings from local storage and processes the URL if needed.
    */
-  await browser.storage.local.get(onSettingsLoaded);
+  browser.storage.local.get(onSettingsLoaded);
 })();

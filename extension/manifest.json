@@ -15,15 +15,11 @@
       "id": "apply_vector_skin",
       "enabled": true,
       "path": "rules/apply.json"
-    },
-    {
-      "id": "remove_vector_skin",
-      "enabled": false,
-      "path": "rules/remove.json"
     }]
   },
   "permissions": [
     "storage",
+    "tabs",
     "declarativeNetRequest"    
   ],
   "host_permissions": [

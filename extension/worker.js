@@ -63,9 +63,7 @@ function updateEnabledRulesets() {
 
     if (vectorSkinActivation) {
         enableRulesetIds.push("apply_vector_skin");
-        disableRulesetIds.push("remove_vector_skin");
     } else {
-        enableRulesetIds.push("remove_vector_skin");
         disableRulesetIds.push("apply_vector_skin");
     }
 

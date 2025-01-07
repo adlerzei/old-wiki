@@ -84,13 +84,17 @@ function hideUrlSwitchChanged() {
 	browser.storage.local.set({
 		hide_url_query: hideURLQuerySwitch.checked
 	});
+
+	if (hideURLQuery) {
+		injectUpdateAddressScript();
+	}
 }
 
 function addSkinParamToAllTabs() {
     browser.tabs.query({}, function(tabs) {
         tabs.forEach(function(tab) {
             const url = new URL(tab.url);
-            if (wikiDomains.some(domain => url.hostname.endsWith(domain)) && (!url.searchParams.has('useskin') || url.searchParams.get('useskin') !== 'vector')) {
+            if (wikiDomains.some(domain => url.hostname.endsWith(domain))) {
                 url.searchParams['useskin'] = 'vector';
                 browser.tabs.update(tab.id, { url: url.toString() });
             }
@@ -102,7 +106,7 @@ function removeSkinParamFromAllTabs() {
     browser.tabs.query({}, function(tabs) {
         tabs.forEach(function(tab) {
             const url = new URL(tab.url);
-            if (wikiDomains.some(domain => url.hostname.endsWith(domain)) && url.searchParams.has('useskin')) {
+            if (wikiDomains.some(domain => url.hostname.endsWith(domain))) {
                 url.searchParams.delete('useskin');
                 let address = url.toString();
                 if (address.endsWith('?')) {

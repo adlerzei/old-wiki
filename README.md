@@ -74,31 +74,3 @@ If you like my work, you can support me via [PayPal](https://www.paypal.me/Chris
 
 ## Acknowledgements
 Thanks to everyone using, supporting and contributing to the extension.
-
-## What's new?
-
-##### v1.0
-- Append "?useskin=vector" to the end of each HTTP request.
-
-##### v1.1
-- Apply the vector skin to the remaining international Wikimedia pages:
-    - Wiktionary
-    - Wikiquote
-    - Wikibooks
-    - Wikisource
-    - Wikispecies
-    - Wikinews
-    - Wikiversity
-    - Wikivoyage
-    - Wikimedia Commons
-    - Wikidata
-    - MediaWiki
-    - Meta-Wiki
-    - Wikimedia Incubator
-    - Wikimedia Cloud Services
-
-##### v1.2
-- A popup was added to activate or deactivate the vector skin.
-
-##### v1.3
-- Fix popup font size for Windows

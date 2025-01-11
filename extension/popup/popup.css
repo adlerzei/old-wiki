@@ -165,3 +165,35 @@ input:checked + .slider:before {
     margin-top: 2px;
     color: #E0E0E0;
 }
+
+/* Smaller switch styles */
+.switch.switch-small {
+    height: 28px;
+    margin: 8px 0;
+}
+
+.switch-small .slider {
+    width: 50px;
+    margin-left: 195px;
+}
+
+.switch-small .slider:before {
+    height: 20px;
+    width: 20px;
+}
+
+.switch-small input:checked + .slider:before {
+    transform: translateX(22px);
+}
+
+.switch-small .slider-text {
+    font-size: 14px;
+    color: #B0B0B0;
+    font-weight: normal;
+}
+
+/* Disabled state for dependent switches */
+.switch-small.disabled {
+    opacity: 0.5;
+    pointer-events: none;
+}

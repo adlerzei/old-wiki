@@ -1,89 +1,103 @@
 html, body {
-    width: 300px;
-    background: #F2F2F2;
+    width: 320px;
+    background: #2C2C2C;
     margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #E0E0E0;
 }
 
-.title{
-    margin: 5px;
+.title {
+    margin: 15px;
 }
 
-.title-text{
+.title-text {
     padding: 2% 0;
     text-align: center;
-    font-size: 20px;
-    color: #000;
+    font-size: 24px;
+    color: #E0E0E0;
     font-weight: bold;
-    font-family: 'Linux Libertine','Georgia','Times',serif;
-    font-variant: small-caps;
+    font-family: 'Roboto', sans-serif;
 }
 
-.title-img  {
+.title-img {
     float: left;
 }
 
 .content-text {
-    font-family: 'Linux Libertine','Georgia','Times',serif;
-    font-variant: small-caps;
-    font-weight: bold;
-    padding: 3px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    padding: 10px;
     margin-left: 16px;
+    color: #B0B0B0;
 }
 
 .select-box {
-    width: 85%;
-    padding: 5px;
+    width: 90%;
+    padding: 12px;
     text-align: left;
-    font-family: 'Linux Libertine','Georgia','Times',serif;
-    font-variant: small-caps;
+    font-family: 'Roboto', sans-serif;
     font-size: 16px;
+    border: 1px solid #444;
+    border-radius: 6px;
+    margin: 10px 0;
+    background: #3C3C3C;
+    color: #E0E0E0;
 }
 
 #content {
-    background-color: #F2F2F2;
+    background-color: #2C2C2C;
     left: 0;
     right: 0;
     bottom: 0;
     height: 100%;
     width: 100%;
+    padding-left: 25px;
+    padding-right: 25px;
 }
 
 select {
-    border: none;
+    border: 1px solid #444;
     width: 100%;
     height: 40px;
     padding-left: 10px;
-    margin-bottom: 10px;
-    margin-left: 20px;
-    margin-top: 0px;
-    color: #666;
-    font-family: 'Linux Libertine','Georgia','Times',serif;
-    font-variant: small-caps;
+    margin-bottom: 15px;
+    margin-left: 0;
+    margin-top: 0;
+    color: #E0E0E0;
+    font-family: 'Roboto', sans-serif;
     font-size: 16px;
-    box-shadow: 2px 2px 5px 1px rgba(0,0,0,0.3);
-    border-radius: 3px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
     outline: none;
     cursor: pointer;
+    background: #3C3C3C;
 }
 
 select option {
-    color: #666;
+    color: #E0E0E0;
+    background: #3C3C3C;
 }
 
 .footer-text {
-    margin-top: 3px;
-    margin-bottom: 3px;
-    font-family: 'Linux Libertine','Georgia','Times',serif;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-family: 'Roboto', sans-serif;
     font-size: 12px;
     text-align: center;
-    color: #666;
+    color: #999;
 }
+
+a:link { color: lightskyblue; }
+a:visited { color: #6d4b8d; }
+a:hover { color: #ffffff; }
+
 /* The switch - the box around the slider */
 .switch {
     position: relative;
     display: inline-block;
-    width: 85%;
+    width: 90%;
     height: 34px;
+    margin: 10px 0;
 }
 
 /* Hide default HTML checkbox */
@@ -101,10 +115,11 @@ select option {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #ccc;
-    -webkit-transition: .4s;
+    background-color: #444;
     transition: .4s;
     margin-left: 195px;
+    border-radius: 34px;
+    width: 60px; /* Adjusted width */
 }
 
 .slider:before {
@@ -115,8 +130,8 @@ select option {
     left: 4px;
     bottom: 4px;
     background-color: white;
-    -webkit-transition: .4s;
     transition: .4s;
+    border-radius: 50%;
 }
 
 input:checked + .slider {
@@ -128,9 +143,7 @@ input:focus + .slider {
 }
 
 input:checked + .slider:before {
-    -webkit-transform: translateX(26px);
-    -ms-transform: translateX(26px);
-    transform: translateX(26px);
+    transform: translateX(26px); /* Adjusted transform distance */
 }
 
 /* Rounded sliders */
@@ -143,12 +156,44 @@ input:checked + .slider:before {
 }
 
 .slider-text {
-    font-family: 'Linux Libertine','Georgia','Times',serif;
-    font-variant: small-caps;
-    padding: 3px;
+    font-family: 'Roboto', sans-serif;
+    padding: 5px;
     margin-left: 25px;
     font-size: 16px;
     text-align: left;
     font-weight: bold;
     margin-top: 2px;
+    color: #E0E0E0;
+}
+
+/* Smaller switch styles */
+.switch.switch-small {
+    height: 28px;
+    margin: 8px 0;
+}
+
+.switch-small .slider {
+    width: 50px;
+    margin-left: 195px;
+}
+
+.switch-small .slider:before {
+    height: 20px;
+    width: 20px;
+}
+
+.switch-small input:checked + .slider:before {
+    transform: translateX(22px);
+}
+
+.switch-small .slider-text {
+    font-size: 14px;
+    color: #B0B0B0;
+    font-weight: normal;
+}
+
+/* Disabled state for dependent switches */
+.switch-small.disabled {
+    opacity: 0.5;
+    pointer-events: none;
 }

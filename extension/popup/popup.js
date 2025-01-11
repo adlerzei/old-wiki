@@ -84,10 +84,6 @@ function hideUrlSwitchChanged() {
 	browser.storage.local.set({
 		hide_url_query: hideURLQuerySwitch.checked
 	});
-
-	if (hideURLQuery) {
-		injectUpdateAddressScript();
-	}
 }
 
 function addSkinParamToAllTabs() {

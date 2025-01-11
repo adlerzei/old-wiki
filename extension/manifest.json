@@ -1,5 +1,5 @@
 {
-  "description": "Changes the Wikipedia user interface to the beautiful legacy vector layout. Is also applied to the other international Wikimedia pages.",
+  "description": "Changes the Wikipedia user interface to the beautiful legacy vector layout. Is also applied to other international Wikimedia pages.",
   "author": "Christian Zei",
   "manifest_version": 3,
   "name": "Old Wiki",

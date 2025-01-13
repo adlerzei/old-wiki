@@ -102,17 +102,9 @@ function updateEnabledRulesets() {
     });
 }
 
-browser.runtime.onInstalled.addListener(onStartUp);
-browser.runtime.onStartup.addListener(onStartUp);
-
-browser.storage.onChanged.addListener((changes, areaName) => {
-    if (areaName != "local")
-        return;
-
-    onSettingsChanged(changes);
-});
-
-
+/**
+ * Adds the 'useskin=vector' parameter to all tabs that are a Wikipedia page.
+ */
 function addSkinParamToAllTabs() {
     browser.tabs.query({}, function(tabs) {
         tabs.forEach(function(tab) {
@@ -125,6 +117,9 @@ function addSkinParamToAllTabs() {
     });
 }
 
+/**
+ * Removes the 'useskin=vector' parameter from all tabs that are a Wikipedia page.
+ */
 function removeSkinParamFromAllTabs() {
     browser.tabs.query({}, function(tabs) {
         tabs.forEach(function(tab) {
@@ -140,3 +135,13 @@ function removeSkinParamFromAllTabs() {
         });
     });
 }
+
+browser.runtime.onInstalled.addListener(onStartUp);
+browser.runtime.onStartup.addListener(onStartUp);
+
+browser.storage.onChanged.addListener((changes, areaName) => {
+    if (areaName != "local")
+        return;
+
+    onSettingsChanged(changes);
+});

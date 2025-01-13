@@ -74,5 +74,11 @@
       ],
       "run_at":"document_start"
     }
-  ]
+  ],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "oldwiki@adlerzei",
+      "strict_min_version": "113.0"
+    }
+}
 }

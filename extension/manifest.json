@@ -40,6 +40,7 @@
     "*://wikitech.wikimedia.org/*"
   ],
   "background": {
+    "scripts": ["worker.js"],
     "service_worker": "worker.js"
   },
   "action": {

@@ -38,7 +38,7 @@ The extension can be added into Chrome, Firefox, Edge, Brave and Opera.
 [Old Wiki at the Chrome Web Store](https://chrome.google.com/webstore/detail/old-wiki/cphagceemhgokfclmbnkpfkmchbfnclb)
 
 #### Firefox Add-ons (AMO)
-[Old Wiki at AMO](https://addons.mozilla.org/de/firefox/addon/old-wiki/)
+[Old Wiki at AMO](https://addons.mozilla.org/en/firefox/addon/old-wiki/)
 
 ### Important Notice
 This is a third party extension and is not related to the Wikipedia developer team in any way.

@@ -32,7 +32,7 @@ Supported [Wikimedia projects](https://meta.wikimedia.org/wiki/Our_projects):
 The extension simply adds "?useskin=vector" to the end of each HTTP request to use the old vector skin.
 
 ### Which browser to use?
-The extension can be added into Chrome, Edge, Brave and Opera. Unfortunately, Firefox is not supported because Firefox does not currently support the delarativeNetRequest API. Nevertheless, we are releasing Firefox-compatible builds so that you can use the extension as soon as Mozilla adds support for delarativeNetRequest to Firefox.
+The extension can be added into Chrome, Firefox, Edge, Brave and Opera.
 
 #### Chrome Web Store
 [Old Wiki at the Chrome Web Store](https://chrome.google.com/webstore/detail/old-wiki/cphagceemhgokfclmbnkpfkmchbfnclb)
